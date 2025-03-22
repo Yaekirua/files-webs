@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Client Download</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Available Files</h1>
+    <ul class="file-list">
+      <% fileLinks.forEach(file => { %>
+        <li>
+          <a href="<%= file.url %>" class="download-link">
+            📄 <%= file.name %>
+          </a>
+        </li>
+      <% }); %>
+    </ul>
+  </div>
+</body>
+</html>
